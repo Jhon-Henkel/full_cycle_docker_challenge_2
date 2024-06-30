@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
     const connection = mysql.createConnection(config)
     connection.query(`INSERT INTO people(name) VALUES ('${name}')`)
 
-    let text = '<h1>Full Cycle Rocks!</h1><br>'
+    let text = '<h1>Full Cycle Rocks!</h1>'
 
     listNames.push(name)
 
